@@ -1,0 +1,34 @@
+extends layouts/master
+
+block body
+  #accessPage
+    h1 アクセス
+    iframe.pure-u-1-1(height='300', frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?f=q&source=s_q&hl=ja&geocode=&q=+%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E6%AD%A4%E8%8A%B1%E7%94%BA%EF%BC%96%E2%88%92%EF%BC%91%EF%BC%90&aq=&sll=36.578308,136.6501&sspn=0.002817,0.004259&ie=UTF8&hq=&hnear=%E6%97%A5%E6%9C%AC,+%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E6%AD%A4%E8%8A%B1%E7%94%BA%EF%BC%96%E2%88%92%EF%BC%91%EF%BC%90&t=m&ll=36.577748,136.649993&spn=0.002068,0.003433&z=18&output=embed')
+    .pure-u-1-1
+      .content
+        p.center
+          a.dottedAnchor(href='https://maps.google.com/maps?f=q&source=embed&hl=ja&geocode=&q=+%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E6%AD%A4%E8%8A%B1%E7%94%BA%EF%BC%96%E2%88%92%EF%BC%91%EF%BC%90&aq=&sll=36.578308,136.6501&sspn=0.002817,0.004259&ie=UTF8&hq=&hnear=%E6%97%A5%E6%9C%AC,+%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E6%AD%A4%E8%8A%B1%E7%94%BA%EF%BC%96%E2%88%92%EF%BC%91%EF%BC%90&t=m&ll=36.577748,136.649993&spn=0.002068,0.003433&z=18') 大きな地図で見る
+        .links
+          p
+            a.dottedAnchor(href='http://www.miyakohotels.ne.jp/kanazawa/banquet/place/seminar_hall/index.html') 金沢都ホテル セミナーホール（旧ロキシー劇場）
+            span 石川県金沢市此花町6-10 B2F
+    h1 宿泊
+    .pure-u-1-1
+      .content
+        p 連休中は金沢市内の宿泊施設の混雑が予想されます。
+        p お早めにご予約下さい。
+        .links
+          a.dottedAnchor(href='http://domestic.hotel.travel.yahoo.co.jp/bin/asearch?&ken=17&larea=1701') ホテル・旅館予約　[Yahoo!トラベル]
+        .links
+          a.dottedAnchor(href='http://www.jalan.net/ikisaki/map/ishikawa/index.html') [じゃらん］国内15,000軒の宿をネットで予約OK！
+        .links
+          a.dottedAnchor(href='http://www4.ocn.ne.jp/~koshigoe/kenko/ken/isikawa/index.html') 健康ランド／サウナ
+    h1 金沢おすすめMAP
+    .pure-u-1-3
+      .content
+        a.dottedAnchor(href='./images/osusumemap.jpg')
+          img(src='./images/osusumemap.jpg')
+          span クリックで拡大
+    .pure-u-2-3
+      .content
+        p ①
