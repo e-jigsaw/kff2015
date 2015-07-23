@@ -23,7 +23,16 @@ html
         p main image
       #mainmenu
         .pure-u-1-5
-          span program
+          .pure-menu-horizontal
+            .pure-menu-item.pure-menu-has-children.pure-menu-allow-hover
+              a.pure-menu-link(href='#') program
+              ul.pure-menu-children
+                li.pure-menu-item
+                  a(href='./countryhorror.html') 田舎ホラー大全科
+                li.pure-menu-item
+                  a(href='./mel.html') 爆音メル・ギブソン
+                li.pure-menu-item
+                  a(href='#') 爆音カーペンター
         .pure-u-1-5
           a(href='./schedule.html')
             span schedule
