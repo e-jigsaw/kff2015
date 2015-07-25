@@ -11,6 +11,10 @@ body
   .banner
     height 340px
 
+  .pure-u-sm-1-4
+    width 25%
+    *width 24.9690%
+
 @media screen and (max-width: 414px)
   .wrapper
     width 414px
@@ -47,12 +51,16 @@ body
 header
   background-color #fff
 
+  .logo
+    text-align center
+    line-height 0
+
   .links
-    text-align right
+    text-align center
 
     a
-      margin 10px
-      font-size 12px
+      margin 4px
+      font-size 10px
       color #009900
       text-decoration none
 
@@ -60,16 +68,40 @@ header
         background-color #00C9FF
 
 #maintitle
-  height 200px
-  background-color #fff
+  line-height 0
 
-  p
-    margin 0
-    padding 0
+  img
+    width 100%
 
 #mainmenu
-  height 40px
   background-color #AA1E1E
+  font-family 'Black Ops One', cursive
+  text-align center
+
+  .mainmenu-item
+    border 1px solid #fff
+
+  .pure-menu-link
+    padding .3em
+
+  .pure-menu-link:hover
+    background-color #AA1E1E
+
+  a, .pure-menu-link
+    text-decoration none
+    color #fff
+    font-size 22px
+
+  .pure-menu-children
+    background-color #6B1313
+    text-align left
+    padding .3em 1em
+
+    .pure-menu-item
+      margin-bottom .3em
+
+    a
+      border-bottom 2px dotted #fff
 
 .dottedAnchor
   text-decoration none
@@ -113,6 +145,15 @@ footer
       width 100%
     .center
       text-align center
+
+  .topbanner
+    padding 3px
+    margin 3px
+    border 1px solid #999
+    text-align center
+
+    img
+      width 100%
 
   #credits
     margin 10px
@@ -159,7 +200,7 @@ footer
 
 #ticketPage
   table
-    width 60%
+    width 80%
 
 #schedulePage
   padding-bottom 40px

@@ -5,13 +5,14 @@ html
     meta(name='viewport', content='user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1')
     block title
     link(href='./index.css', type='text/css', rel='stylesheet')
+    link(href='http://fonts.googleapis.com/css?family=Black+Ops+One', rel='stylesheet', type='text/css')
   body
     .wrapper
       header
-        .pure-u-1-5
+        .pure-u-1-1.logo
           a(href='/')
             img(src='http://www.eiganokai.com/images/logo_s.jpg', alt='かなざわ映画の会')
-        .pure-u-4-5
+        .pure-u-1-1
           .links
             a(href='/') ホーム
             a(href='/about') 団体概要
@@ -20,15 +21,16 @@ html
             a(href='//eiganokai.blog.fc2.com/') ブログ
             a(href='/about/info.html') お問合わせ
       #maintitle
-        p main image
+        a(href='./')
+          img(src='./images/maintitle.png')
       #mainmenu
-        .pure-u-1-5
-          .pure-menu-horizontal
+        .pure-u-1-2.pure-u-sm-1-4
+          .pure-menu-horizontal.mainmenu-item
             .pure-menu-item.pure-menu-has-children.pure-menu-allow-hover
-              a.pure-menu-link(href='#') program
+              .pure-menu-link Program
               ul.pure-menu-children
                 li.pure-menu-item
-                  a(href='./countryhorror.html') 田舎ホラー大全科
+                  a.dottedAnchor(href='./countryhorror.html') 田舎ホラー大全科
                 li.pure-menu-item
                   a(href='./faraway.html') 彼方より......
                 li.pure-menu-item
@@ -37,17 +39,17 @@ html
                   a(href='./carpenter.html') 爆音カーペンター
                 li.pure-menu-item
                   a(href='./kingkong.html') キングコング野外上映
-        .pure-u-1-5
-          a(href='./schedule.html')
-            span schedule
-        .pure-u-1-5
-          a(href='./ticket.html')
-            span ticket
-        .pure-u-1-5
-          a(href='./access.html')
-            span access
-        .pure-u-1-5
-          span faq
+                li.pure-menu-item
+                  a(href='./kokou.html') 孤高の遠吠
+        .pure-u-1-2.pure-u-sm-1-4
+          .mainmenu-item
+            a.pure-menu-link(href='./schedule.html') Schedule
+        .pure-u-1-2.pure-u-sm-1-4
+          .mainmenu-item
+            a.pure-menu-link(href='./ticket.html') Ticket
+        .pure-u-1-2.pure-u-sm-1-4
+          .mainmenu-item
+            a.pure-menu-link(href='./access.html') Access
       block body
       footer
         p Copyright &copy; 2007-2015, Kanazawa-Eiga-no-kai All rights reserved.
