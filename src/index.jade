@@ -3,6 +3,14 @@ extends layouts/master
 block title
   title カナザワ映画祭2015｜かなざわ映画の会
 
+block ogps
+  meta(property='og:title', content='カナザワ映画祭2015｜かなざわ映画の会')
+  meta(property='og:type', content='website')
+  meta(property='og:url', content='http://www.eiganokai.com/event/filmfes2015/')
+  meta(property='og:image', content='http://www.eiganokai.com/event/filmfes2015/mainvisual.png')
+  meta(property='og:description', content='カナザワ映画祭2015')
+  meta(property='og:locale', content='ja_JP')
+
 block body
   #toppage
     .pure-g
@@ -11,6 +19,11 @@ block body
         p.center
           a(href='./bakuon.html')
             img(src='./images/bakuon.png')
+        p.center
+          iframe(src='//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.eiganokai.com%2Fevent%2Ffilmfes2015%2Findex.html&width=200&layout=button_count&action=like&show_faces=false&share=true&height=21', scrolling='no', frameborder='0', style='border:none; overflow:hidden; width:160px; height:21px;', allowtransparency='true')
+          a.twitter-share-button(href='https://twitter.com/share', data-url='http://www.eiganokai.com/event/filmfes2015/', data-text='「カナザワ映画祭2015」2015年9月19日（土）〜23日（水・祝）会場：金沢都ホテル・セミナーホール（旧金沢ロキシー劇場）', data-via='eiganokai', data-lang='ja', data-hashtags='カナザワ映画祭2015') &#x30C4;&#x30A4;&#x30FC;&#x30C8;
+          script(type='text/javascript') !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
       .pure-g.pure-u-sm-1-4
         .pure-u-1-1
           h1 プログラム
