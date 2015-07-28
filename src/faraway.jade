@@ -1,10 +1,10 @@
 extends layouts/master
 
 block title
-  title 彼方より…… - カナザワ映画祭2015｜かなざわ映画の会
+  title 彼方より⋯⋯ - カナザワ映画祭2015｜かなざわ映画の会
 
 block ogps
-  meta(property='og:title', content='彼方より...... - カナザワ映画祭2015｜かなざわ映画の会')
+  meta(property='og:title', content='彼方より⋯⋯ - カナザワ映画祭2015｜かなざわ映画の会')
   meta(property='og:type', content='article')
   meta(property='og:url', content='http://www.eiganokai.com/event/filmfes2015/faraway.html')
   meta(property='og:image', content='http://www.eiganokai.com/event/filmfes2015/faraway.png')
@@ -13,8 +13,9 @@ block ogps
 
 block body
   #detailPage
-    h1 彼方より……
-    .banner(style="background-image: url('./images/faraway.png');")
+    h1 彼方より⋯⋯
+    .banner
+      img(src='./images/faraway.png')
     .film#nightbreed
       h2
         .ja ミディアン 完全版
@@ -29,22 +30,6 @@ block body
         p 出演：デヴィッド・クローネンバーグ、クレイグ・シェイファー、アン・ボビー、チャールズ・ヘイド、ヒュー・クァーシー、ヒュー・ロス、ダグ・ブラッドレイ
       .desc
         p 無実の罪で警察に追われる主人公の青年ブーンは、夜の種族「ミディアン」の遺跡で「彼ら」と出会う。「彼ら」は人類史の影で悪魔や妖怪、怪物として忌み嫌われてきた種族だった。人間「警察軍」と夜の種族「ミディアン」を争わせるため暗躍する純粋悪のサイコキラーをデヴィッド・クローネンバーグが怪演する。人間＝善、夜の種族＝悪とは単純に分けれない重層的な世界観はクライブ・バーカーの真骨頂である。劇場公開版より16分ながいディレクターズ・カットのデジタル・リマスター版を日本初上映。
-    .film#inthemouthofmadness
-      h2
-        .ja マウス・オブ・マッドネス
-        .en In the Mouth of Madness
-      .capture
-        img(src='./images/inthemouthofmadness.png')
-      .info
-        p 1994年／アメリカ／96min／シネスコ／英語・日本語字幕
-        p 監督・音楽：ジョン・カーペンター
-        p 脚本：マイケル・デ・ルカ
-        p 音楽：ジム・ラング
-        p 特撮：ＩＬＭ	
-        p 特殊メイク：ＫＮＢ　ＥＦＸ
-        p 出演：サム・ニール、ジュリー・カーメン、ユルゲン・プロフノウ、ジョン・グローヴァー、チャールトン・ヘストン
-      .desc
-        p 主人公の保険調査員サム・ニールが行方不明になったベストセラー作家を探すうちに、太鼓の邪神たちが跋扈する闇の世界に足を踏み入れてしまう。「狂気の淵」に陥った彼が正気を保てなくなるのと同様に、この作品を見ている観客の我々も何が現実で何が幻覚が判断できなくなる奇妙な感覚に囚われるだろう。クトゥルー・ホラー版『2001年 宇宙の旅』のようなトリップ型映画を爆音上映。アナタは正気を保てるか？
     .film#blob
       h2
         .ja ブロブ／宇宙からの不明物体
@@ -134,7 +119,7 @@ block body
         p ある日から、家族や友人、知人が別人のようになってしまった。周囲にその不安を訴えても失笑されて相手にされない。実は外宇宙からの侵略が静かに密かに始まっていたのだった。主人公の衛生局調査員ドナルド・サザーランドは周囲から孤立しながらも必死で戦いを始める。ドン・シーゲルによる1956年製作のオリジナル版は小さな田舎町を舞台に侵略の恐怖を描いていたが、このリメイク版は大都市が舞台になり、現代神経症的な恐怖が描かれ怖い。豪華出演陣の中、ドン・シーゲルがタクシー・ドライバー役で登場。
     .film#talk
       h2
-        .ja 映画の生体解剖×コワすぎ！
+        .ja 【トークイベント】映画の生体解剖×コワすぎ！
       .pure-u-1-3
         .capture
           img(src='./images/inao.png')
